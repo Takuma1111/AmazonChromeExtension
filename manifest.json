@@ -1,0 +1,18 @@
+{
+  "name": "Amazonフィルター",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Amazonで商品検索をした際にまったく知らない販売業者ではなく、それより信頼度が高いAmazonから出品している商品だけを表示するフィルターです。",
+  "icons": {
+    "16": "/chromeIcon.png",
+    "48": "/chromeIcon.png",
+    "128": "/chromeIcon.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.amazon.co.jp/s?k=*"],
+    "js": [
+      "content.js"
+    ]
+  }]
+}
+
